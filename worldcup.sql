@@ -112,38 +112,38 @@ ALTER TABLE ONLY public.teams ALTER COLUMN team_id SET DEFAULT nextval('public.t
 --
 
 COPY public.games (game_id, year, round, winner_id, opponent_id, winner_goals, opponent_goals) FROM stdin;
-65	2018	Final	54	55	4	2
-66	2018	Third Place	56	57	2	0
-67	2018	Semi-Final	55	57	2	1
-68	2018	Semi-Final	54	56	1	0
-69	2018	Quarter-Final	55	58	2	2
-70	2018	Quarter-Final	57	59	2	0
-71	2018	Quarter-Final	56	60	2	1
-72	2018	Quarter-Final	54	61	2	0
-73	2018	Eighth-Final	61	62	2	1
-74	2018	Eighth-Final	54	63	4	3
-75	2018	Eighth-Final	60	64	2	0
-76	2018	Eighth-Final	56	65	3	2
-77	2018	Eighth-Final	59	66	1	0
-78	2018	Eighth-Final	57	67	1	1
-79	2018	Eighth-Final	55	68	1	1
-80	2018	Eighth-Final	58	69	1	1
-81	2014	Final	70	63	1	0
-82	2014	Third Place	71	60	3	0
-83	2014	Semi-Final	63	71	0	0
-84	2014	Semi-Final	70	60	7	1
-85	2014	Quarter-Final	60	67	2	1
-86	2014	Quarter-Final	70	54	1	0
-87	2014	Quarter-Final	71	72	0	0
-88	2014	Quarter-Final	63	56	1	0
-89	2014	Eighth-Final	60	73	1	1
-90	2014	Eighth-Final	67	61	2	0
-91	2014	Eighth-Final	71	64	2	1
-92	2014	Eighth-Final	72	74	1	1
-93	2014	Eighth-Final	54	75	2	0
-94	2014	Eighth-Final	70	76	2	1
-95	2014	Eighth-Final	63	66	1	0
-96	2014	Eighth-Final	56	77	2	1
+129	2018	Final	103	104	4	2
+130	2018	Third Place	105	106	2	0
+131	2018	Semi-Final	104	106	2	1
+132	2018	Semi-Final	103	105	1	0
+133	2018	Quarter-Final	104	107	2	2
+134	2018	Quarter-Final	106	108	2	0
+135	2018	Quarter-Final	105	109	2	1
+136	2018	Quarter-Final	103	110	2	0
+137	2018	Eighth-Final	110	111	2	1
+138	2018	Eighth-Final	103	112	4	3
+139	2018	Eighth-Final	109	113	2	0
+140	2018	Eighth-Final	105	114	3	2
+141	2018	Eighth-Final	108	115	1	0
+142	2018	Eighth-Final	106	116	1	1
+143	2018	Eighth-Final	104	117	1	1
+144	2018	Eighth-Final	107	118	1	1
+145	2014	Final	119	112	1	0
+146	2014	Third Place	120	109	3	0
+147	2014	Semi-Final	112	120	0	0
+148	2014	Semi-Final	119	109	7	1
+149	2014	Quarter-Final	109	116	2	1
+150	2014	Quarter-Final	119	103	1	0
+151	2014	Quarter-Final	120	121	0	0
+152	2014	Quarter-Final	112	105	1	0
+153	2014	Eighth-Final	109	122	1	1
+154	2014	Eighth-Final	116	110	2	0
+155	2014	Eighth-Final	120	113	2	1
+156	2014	Eighth-Final	121	123	1	1
+157	2014	Eighth-Final	103	124	2	0
+158	2014	Eighth-Final	119	125	2	1
+159	2014	Eighth-Final	112	115	1	0
+160	2014	Eighth-Final	105	126	2	1
 \.
 
 
@@ -152,31 +152,30 @@ COPY public.games (game_id, year, round, winner_id, opponent_id, winner_goals, o
 --
 
 COPY public.teams (team_id, name) FROM stdin;
-53	
-54	France
-55	Croatia
-56	Belgium
-57	England
-58	Russia
-59	Sweden
-60	Brazil
-61	Uruguay
-62	Portugal
-63	Argentina
-64	Mexico
-65	Japan
-66	Switzerland
-67	Colombia
-68	Denmark
-69	Spain
-70	Germany
-71	Netherlands
-72	Costa Rica
-73	Chile
-74	Greece
-75	Nigeria
-76	Algeria
-77	United States
+103	France
+104	Croatia
+105	Belgium
+106	England
+107	Russia
+108	Sweden
+109	Brazil
+110	Uruguay
+111	Portugal
+112	Argentina
+113	Mexico
+114	Japan
+115	Switzerland
+116	Colombia
+117	Denmark
+118	Spain
+119	Germany
+120	Netherlands
+121	Costa Rica
+122	Chile
+123	Greece
+124	Nigeria
+125	Algeria
+126	United States
 \.
 
 
@@ -184,14 +183,14 @@ COPY public.teams (team_id, name) FROM stdin;
 -- Name: games_game_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.games_game_id_seq', 96, true);
+SELECT pg_catalog.setval('public.games_game_id_seq', 160, true);
 
 
 --
 -- Name: teams_team_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.teams_team_id_seq', 77, true);
+SELECT pg_catalog.setval('public.teams_team_id_seq', 126, true);
 
 
 --
